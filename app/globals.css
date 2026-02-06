@@ -1,26 +1,37 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-bakpia-green: var(--bakpia-green);
+  --color-bakpia-cream: var(--bakpia-cream);
+  --color-bakpia-purple: var(--bakpia-purple);
+  --color-bakpia-brown: var(--bakpia-brown);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  --animate-fade-in-up: fade-in-up 0.8s ease-out forwards;
+  --animate-bounce-slow: bounce 3s infinite;
+
+  @keyframes fade-in-up {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
   }
 }
 
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  
+  /* Brand Colors - Brightened for freshness */
+  --bakpia-green: #16A34A; /* Vibrant Green (Tailwind green-600) */
+  --bakpia-cream: #FEF9E7; /* Warm Cream */
+  --bakpia-purple: #7C3AED; /* Vibrant Purple */
+  --bakpia-brown: #92400E; /* Warm Amber Brown */
+}
+
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bakpia-cream);
+  color: var(--bakpia-green);
+  font-family: var(--font-sans);
 }
