@@ -5,7 +5,7 @@ import ProductGrid from "@/components/ProductGrid";
 import Promo from "@/components/Promo";
 import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
-import WhatsAppButton from "@/components/WhatsAppButton";
+import Chatbot from "@/components/Chatbot";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
       <Promo />
       <Testimonials />
       <Footer />
-      <WhatsAppButton />
+      <Chatbot />
     </main>
   );
 }

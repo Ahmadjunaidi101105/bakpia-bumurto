@@ -9,7 +9,7 @@ const products = [
     id: 1,
     name: "Bakpia Original",
     price: "25.000",
-    image: "/images/foto%20produk%20lagi.jpg",
+    image: "/images/bakpia_original.jpg",
     description: "Rasa klasik dengan isian kacang hijau premium yang lembut dan legit.",
     tag: "Best Seller"
   },
